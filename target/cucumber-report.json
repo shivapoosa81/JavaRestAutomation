@@ -1,0 +1,211 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Creating a Post",
+        "description": "",
+        "id": "posts-crud-operations;creating-a-post;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "line": 5,
+            "name": "New post details \"122\" \"224\" \"football\" \"excellent\"",
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "Given "
+          },
+          {
+            "line": 6,
+            "name": "Add new post details",
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3629061,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Post added successfully",
+            "match": {
+              "location": "PostSteps.Post_added_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Retrieving an existing Post",
+        "description": "",
+        "id": "posts-crud-operations;retrieving-an-existing-post;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "line": 13,
+            "name": "Post Identifier as \"224\"",
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "line": 14,
+            "name": "Get the post details",
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Verify the retrieved post details with id",
+            "match": {
+              "location": "PostSteps.Verify_the_retrieved_post_details_with_id()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Updating a Post",
+        "description": "",
+        "id": "posts-crud-operations;updating-a-post;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "line": 21,
+            "name": "Post Id \"224\" to update \"122\" \"football\" \"very good\"",
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "Given "
+          },
+          {
+            "line": 22,
+            "name": "Update the post details",
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Get the post details as modified \"122\" \"224\" \"football\" \"very good\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "122",
+                  "offset": 34
+                },
+                {
+                  "val": "224",
+                  "offset": 40
+                },
+                {
+                  "val": "football",
+                  "offset": 46
+                },
+                {
+                  "val": "very good",
+                  "offset": 57
+                }
+              ],
+              "location": "PostSteps.Get_the_post_details_as_modified(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Deleting a Post",
+        "description": "",
+        "id": "posts-crud-operations;deleting-a-post;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "line": 29,
+            "name": "Post Identifier as \"224\"",
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "line": 30,
+            "name": "Delete the post details",
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 700334,
+              "error_message": "junit.framework.AssertionFailedError\n\tat junit.framework.Assert.fail(Assert.java:48)\n\tat junit.framework.Assert.assertTrue(Assert.java:20)\n\tat junit.framework.Assert.assertTrue(Assert.java:27)\n\tat com.unibet.api.tests.PostSteps.Post_deleted_successfully(PostSteps.java:97)\n\tat ✽.Then Post deleted successfully(com/unibet/api/tests/posts.feature:31)\n",
+              "status": "failed"
+            },
+            "line": 31,
+            "name": "Post deleted successfully",
+            "match": {
+              "location": "PostSteps.Post_deleted_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Posts CRUD operations",
+    "description": "",
+    "id": "posts-crud-operations",
+    "keyword": "Feature",
+    "uri": "com/unibet/api/tests/posts.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@test"
+      }
+    ]
+  }
+]

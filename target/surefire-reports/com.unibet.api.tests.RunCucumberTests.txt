@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: com.unibet.api.tests.RunCucumberTests
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 2, Errors: 4, Skipped: 2, Time elapsed: 3.402 sec <<< FAILURE!
+When Get the post details              Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.unibet.api.tests.AbstractTest.convertResponseToPost(AbstractTest.java:49)
+	at com.unibet.api.tests.AbstractTest.getPost(AbstractTest.java:76)
+	at com.unibet.api.tests.PostSteps.Get_the_post_details(PostSteps.java:57)
+	at ✽.When Get the post details(com/unibet/api/tests/posts.feature:14)
+
+| 224 |            Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.unibet.api.tests.AbstractTest.convertResponseToPost(AbstractTest.java:49)
+	at com.unibet.api.tests.AbstractTest.getPost(AbstractTest.java:76)
+	at com.unibet.api.tests.PostSteps.Get_the_post_details(PostSteps.java:57)
+	at ✽.When Get the post details(com/unibet/api/tests/posts.feature:14)
+
+When Update the post details                    Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.unibet.api.tests.AbstractTest.convertResponseToPost(AbstractTest.java:49)
+	at com.unibet.api.tests.AbstractTest.updatePost(AbstractTest.java:88)
+	at com.unibet.api.tests.PostSteps.Update_the_post_details(PostSteps.java:78)
+	at ✽.When Update the post details(com/unibet/api/tests/posts.feature:22)
+
+| 122 | 224 | football | very good |                  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.unibet.api.tests.AbstractTest.convertResponseToPost(AbstractTest.java:49)
+	at com.unibet.api.tests.AbstractTest.updatePost(AbstractTest.java:88)
+	at com.unibet.api.tests.PostSteps.Update_the_post_details(PostSteps.java:78)
+	at ✽.When Update the post details(com/unibet/api/tests/posts.feature:22)
+
+Then Post deleted successfully                           Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.unibet.api.tests.PostSteps.Post_deleted_successfully(PostSteps.java:97)
+	at ✽.Then Post deleted successfully(com/unibet/api/tests/posts.feature:31)
+
+| 224 |                        Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.unibet.api.tests.PostSteps.Post_deleted_successfully(PostSteps.java:97)
+	at ✽.Then Post deleted successfully(com/unibet/api/tests/posts.feature:31)
+

@@ -1,0 +1,3 @@
+com/unibet/api/tests/RunCucumberTests.class
+com/unibet/api/tests/AbstractTest.class
+com/unibet/api/tests/PostSteps.class
